@@ -1,18 +1,7 @@
 pipeline {
     agent any
-
-    environment {
-        GITHUB_CREDENTIALS = 'dfcb3cb6-d9f8-474e-8a68-f17d371665c9'
-        Github_URl = 'https://github.com/elfergouchmohamed/Azure_infrastructure.git'
-        Github_Branch = 'master'
-    }
-
+    
     stages {
-        stage('Checkout from GitHub') {
-            steps {
-               git url: "${Github_URl}", branch: "${Github_Branch}", credentialsId: "${GITHUB_CREDENTIALS}"
-            }
-        }
         stage('Init Terraform') {
             steps {
                 script {
