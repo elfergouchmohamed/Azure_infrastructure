@@ -16,7 +16,7 @@ pipeline {
         stage('Init Terraform') {
             steps {
                 script {
-                    dir ('Terraform') {
+                    dir ('AzureTerraform') {
                         sh 'terraform init -upgrade'
                     }
                 }
@@ -25,7 +25,7 @@ pipeline {
         stage('Plan Terraform') {
             steps {
                 script {
-                    dir ('Terraform') {
+                    dir ('AzureTerraform') {
                         sh 'terraform plan'
                     }
                 }
@@ -34,7 +34,7 @@ pipeline {
         stage('Apply Terraform') {
             steps {
                 script {
-                    dir ('Terraform') {
+                    dir ('AzureTerraform') {
                         sh 'terraform apply -auto-approve'
                     }
                 }
