@@ -1,0 +1,8 @@
+rg = "Jenkins-rg"
+vnet = "Jenkins-vnet"
+location = "East US"
+ip = "Jenkins-ip"
+subnet = "Jenkins-subnet"
+nic = "Jenkins-nic"
+vm = "Jenkins-vm"
+nsg = "Jenkins-nsg"
