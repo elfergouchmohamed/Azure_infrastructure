@@ -74,7 +74,7 @@ resource "azurerm_linux_virtual_machine" "Jenkins-vm" {
     name                 = "Jenkins-disk"
     caching              = "ReadWrite"
     storage_account_type = "StandardSSD_LRS"
-    disk_size_gb = 100
+    disk_size_gb = 60
   }
 
   source_image_reference {
