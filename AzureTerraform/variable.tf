@@ -1,8 +1,8 @@
-variable "rg" {
+variable "resource_group_name" {
   type = string
 }
 
-variable "vnet" {
+variable "virtual_network_name" {
   type = string
 }
 
@@ -10,21 +10,29 @@ variable "location" {
   type = string
 }
 
-variable "ip" {
+variable "public_ip_name" {
     type = string
 }
-variable "subnet" {
+variable "subnet_name" {
   type = string 
 }
 
-variable "vm" {
+variable "admin_username" {
     type = string
 }
 
-variable "nic" {
+variable "network_interface_name" {
     type = string
 }
 
-variable "nsg" {
+variable "network_security_group_name" {
+  type = string
+}
+
+variable "virtual_machine_name" {
+  type = string
+}
+
+variable "os_disk_name" {
   type = string
 }
